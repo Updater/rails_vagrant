@@ -23,14 +23,10 @@ We'll mount the "~/Desktop/Web" Host directory to "/var/www" on the dev box. All
 
 
 ### IP address
-The box is on a local virtual network with IP `192.168.33.10`
+The box is on a local virtual network with IP `192.168.33.11`
 
 ### Port forwarding
-Vagrant forwards the following ports on the host to the dev box
-
-1. 8080 to 80
-2. 8443 to 443
-3. 2222 to 22
+At present we don't have any port forwarding setup.
 
 
 ### SSH to vagrant box
