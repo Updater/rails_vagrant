@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-   config.vm.box = "bento/ubuntu-16.04"
+  config.vm.box = "bento/ubuntu-14.04"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -70,16 +70,16 @@ Vagrant.configure(2) do |config|
   # SHELL
 
   config.vm.provision :chef_solo do |chef|
+    chef.version = '12.8.1'
     chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
     chef.add_recipe "build-essential"
     chef.add_recipe "apt"
+    chef.add_recipe "updater::mysql"
     chef.add_recipe "nodejs"
     chef.add_recipe "updater"
     chef.add_recipe "rvm::user"
     chef.add_recipe "vim"
-    chef.add_recipe "mysql::server"
-    chef.add_recipe "mysql::client"
 
     # Install Ruby 2.2.1 and Bundler
     # Set an empty root password for MySQL to make things simple
