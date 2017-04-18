@@ -99,11 +99,11 @@ Vagrant.configure(2) do |config|
               "ruby-2.2.3" => [
                 {
                   "name" => "bundler",
-                  "version" => "1.10.6"
+                  "version" => "1.14.6"
                 },
                 {
                   "name" => "rails",
-                  "version" => "5.0.0.1"
+                  "version" => "5.0.2"
                 },
                 {
                   "name" => "sass",
