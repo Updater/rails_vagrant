@@ -12,7 +12,7 @@ package 'libmysqlclient-dev'
 
 mysql_service 'default' do
   version '5.7'
-  package_version '5.7.18-1ubuntu14.04'
+  package_version '5.7.19-1ubuntu14.04'
   package_name 'mysql-server'
   port '3306'
   data_dir '/var/lib/mysql'
