@@ -80,6 +80,7 @@ Vagrant.configure(2) do |config|
     chef.add_recipe "updater"
     chef.add_recipe "rvm::user"
     chef.add_recipe "vim"
+    chef.add_recipe "updater::vagrant_rvm"
 
     # Install Ruby 2.2.1 and Bundler
     # Set an empty root password for MySQL to make things simple
